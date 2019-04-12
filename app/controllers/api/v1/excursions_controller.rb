@@ -3,6 +3,10 @@ class Api::V1::ExcursionsController < ApplicationController
     render json: Excursion.all
   end
 
+  def show
+    render json: Excursion.find(params[:id])
+  end
+
   def create
     excursion = Excursion.create(excursion_params)
     render json: excursion

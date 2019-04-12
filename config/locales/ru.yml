@@ -1,5 +1,20 @@
 ru:
   activerecord:
+    errors:
+      models:
+        image:
+          attributes:
+            file:
+              blank: 'не может быть пустым'
+
+        excursion:
+          attributes:
+            title:
+              blank: 'не может быть пустым'
+            description:
+              blank: 'не может быть пустым'
+            image:
+              blank: 'не может быть пустым'
     models:
       user:
         one: 'Пользователь'
@@ -11,6 +26,11 @@ ru:
         many: 'Экскурсии'
         few: 'Экскурсий'
         other: 'Экскурсии'
+      image:
+        one: 'Изображение'
+        many: 'Изображения'
+        few: 'Изображений'
+        other: 'Изоражения'
     attributes:
       attribute_commons: &commons
         name: 'Название'
@@ -24,6 +44,8 @@ ru:
         title: 'Заголовок'
       user:
         <<: *commons
+      image:
+        file: ''
   time:
     am: утра
     formats:

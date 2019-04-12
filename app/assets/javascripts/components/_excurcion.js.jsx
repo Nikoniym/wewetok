@@ -64,13 +64,6 @@ class Excursion extends React.Component {
                 <button onClick={() => this.handleEdit()}>
                     {this.state.editable ? "Submit" : "Edit"}
                 </button>
-                {!this.state.editable && (
-                    <button
-                        onClick={() => this.props.handleDelete(this.props.excursion.id)}
-                    >
-                        Delete
-                    </button>
-                )}
             </div>
         );
     }

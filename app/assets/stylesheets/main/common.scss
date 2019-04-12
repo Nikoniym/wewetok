@@ -1,0 +1,43 @@
+@import 'modules/base';
+
+body {
+  font: $font_base;
+  color: $grey-dark;
+  background-color: $grey-background;
+}
+
+header {
+  background: $green;
+  padding: 10px 0;
+
+
+  h1 {
+    color: $white;
+  }
+}
+
+.excursions_list {
+  img {
+    border-radius: 3px;
+  }
+
+  h3 {
+  }
+
+  a {
+    text-decoration: none;
+    color: $grey-light;
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .excursions_list_item {
+    padding: 15px;
+    border-radius: 3px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+  }
+}
+

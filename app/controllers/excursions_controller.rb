@@ -1,0 +1,1 @@
+class ExcursionsController < ApplicationController; end
